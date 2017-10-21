@@ -12,12 +12,16 @@
 Distinct label counts for script types
 
 
-Script type   Distinct Classes
------------   ----------------
-HIRAGANA      75
-KATAKANA      48
-KANJI         881
-ALL           1004
+Script type		Distinct Classes
+	
+-----------		----------------
+HIRAGANA		75
+	
+KATAKANA		48
+	
+KANJI			881
+	
+ALL			1004
 
 Change the corresponding class values in
 onehot_labels = tf.one_hot(
