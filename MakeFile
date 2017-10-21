@@ -1,0 +1,28 @@
+STYLE:=./Styles/emerald-harvard.csl
+BIB:=./Specifications/ref.bib
+TEMPLATES:=$(wildcard Template/*.tex)
+TEXAREA:=~/Library/texmf/tex/latex/local
+INTERMEDIATE_TEX:=project_report.tex
+
+REPORT:= \
+	Report/abstract.md\
+  Report/introduction.md\
+	Report/background.md\
+  Report/approach.md\
+	Report/experiment.md\
+	Report/results.md\
+	Report/conclusions.md
+
+all: $(INTERMEDIATE_TEX)
+
+$(INTERMEDIATE_TEX): $(REPORT) $(TEMPLATES) config.yaml
+	pandoc -s -S --filter pandoc-eqnos --natbib --bibliography=$(BIB) \
+	$(REPORT) config.yaml --csl=$(STYLE) --chapters \
+	--template=Template/latex_template.tex -o Output/$@
+	latexmk -outdir=Output -pdf Output/$@
+	ln -fs Output/report.pdf ./report.pdf
+
+
+clean:
+	rm -f *.pdf
+	rm -rf Output/*

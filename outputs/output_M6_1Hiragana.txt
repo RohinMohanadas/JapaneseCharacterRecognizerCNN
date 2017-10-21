@@ -1,0 +1,2 @@
+Imported HIRAGANA
+{'global_step': 10000, 'loss': 0.51230729, 'accuracy': 0.91346157}

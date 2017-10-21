@@ -1,0 +1,948 @@
+------------ /pdc/modules/system/base ------------ 
+anaconda/py27/2.1          anaconda/py27/4.2.0        
+anaconda/py27/2.4.1        anaconda/py35/4.2.0        
+anaconda/py27/4.0.0-serial 
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/.conda/envs/my_root/lib/python3.5/site-packages/tensorflow/contrib/learn/python/learn/monitors.py:267: BaseMonitor.__init__ (from tensorflow.contrib.learn.python.learn.monitors) is deprecated and will be removed after 2016-12-05.
+Instructions for updating:
+Monitors are deprecated. Please use tf.train.SessionRunHook.
+INFO:tensorflow:Using default config.
+INFO:tensorflow:Using config: {'_environment': 'local', '_keep_checkpoint_every_n_hours': 10000, '_evaluation_master': '', '_save_summary_steps': 100, '_master': '', '_is_chief': True, '_save_checkpoints_secs': 600, '_num_ps_replicas': 0, '_tf_random_seed': None, '_task_type': None, '_keep_checkpoint_max': 5, '_tf_config': gpu_options {
+  per_process_gpu_memory_fraction: 1.0
+}
+, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f752c191160>, '_save_checkpoints_steps': None}
+/afs/pdc.kth.se/home/r/rohin/.conda/envs/my_root/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py:247: FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+  equality = a == b
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:321: calling BaseEstimator.fit (from tensorflow.contrib.learn.python.learn.estimators.estimator) with batch_size is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:321: calling BaseEstimator.fit (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:321: calling BaseEstimator.fit (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+INFO:tensorflow:Create CheckpointSaverHook.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.20GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x12631cb70
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.20GiB
+Free memory: 11.13GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:85:00.0)
+E tensorflow/stream_executor/cuda/cuda_driver.cc:1002] failed to allocate 11.20G (12029132800 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+E tensorflow/stream_executor/cuda/cuda_driver.cc:1002] failed to allocate 11.20G (12029132800 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+INFO:tensorflow:Saving checkpoints for 1 into /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/logs/japcnn_Kanji_god_M8/model.ckpt.
+INFO:tensorflow:loss = 6.78965, step = 1
+INFO:tensorflow:probabilities = [[ 0.00116153  0.00110159  0.00122983 ...,  0.00129066  0.00110519
+   0.00120435]
+ [ 0.00119128  0.00114263  0.00115949 ...,  0.00124934  0.00125482
+   0.00116836]
+ [ 0.00114441  0.00111886  0.0012178  ...,  0.00125693  0.00109991
+   0.00126752]
+ ..., 
+ [ 0.00119479  0.00106356  0.00115847 ...,  0.00127969  0.00114919
+   0.00121017]
+ [ 0.00117564  0.00124216  0.00121709 ...,  0.00123283  0.00099691
+   0.00125309]
+ [ 0.00109538  0.00115113  0.00117113 ...,  0.00117978  0.0011876
+   0.0012596 ]]
+INFO:tensorflow:global_step/sec: 7.9445
+INFO:tensorflow:loss = 6.77922, step = 101
+INFO:tensorflow:global_step/sec: 8.10088
+INFO:tensorflow:loss = 6.7782, step = 201
+INFO:tensorflow:probabilities = [[ 0.00117145  0.00114709  0.00115885 ...,  0.00114967  0.00115576
+   0.00109321]
+ [ 0.00116326  0.00111381  0.00118054 ...,  0.00115045  0.00116722
+   0.00110016]
+ [ 0.00113533  0.00112664  0.00114179 ...,  0.00119234  0.0011575
+   0.00113766]
+ ..., 
+ [ 0.00119633  0.0011296   0.0011557  ...,  0.00116279  0.00113696
+   0.00110115]
+ [ 0.00116846  0.00113052  0.0011525  ...,  0.00117625  0.00115553
+   0.00110601]
+ [ 0.00117854  0.00112184  0.00112581 ...,  0.00120069  0.00115046
+   0.0011195 ]]
+INFO:tensorflow:global_step/sec: 8.06391
+INFO:tensorflow:loss = 6.79333, step = 301
+INFO:tensorflow:global_step/sec: 8.04411
+INFO:tensorflow:loss = 6.12972, step = 401
+INFO:tensorflow:probabilities = [[ 0.00447159  0.000987    0.00094664 ...,  0.00100115  0.00102099
+   0.00079398]
+ [ 0.00101524  0.00064534  0.00119874 ...,  0.00053151  0.00188773
+   0.00062725]
+ [ 0.00644529  0.00081198  0.00153732 ...,  0.00282281  0.00043921
+   0.00238928]
+ ..., 
+ [ 0.00116159  0.00069155  0.00104114 ...,  0.00118855  0.00095466
+   0.00064588]
+ [ 0.00164665  0.00035027  0.00123394 ...,  0.00061441  0.00163118
+   0.00079393]
+ [ 0.0004108   0.00102717  0.00029249 ...,  0.0007596   0.00063198
+   0.00023833]]
+INFO:tensorflow:global_step/sec: 8.01969
+INFO:tensorflow:loss = 4.84132, step = 501
+INFO:tensorflow:global_step/sec: 8.01247
+INFO:tensorflow:loss = 3.90081, step = 601
+INFO:tensorflow:probabilities = [[  1.28341431e-03   1.15544579e-04   2.81952489e-05 ...,   6.42282073e-04
+    3.71428090e-04   5.70846023e-04]
+ [  3.09753144e-04   5.61462803e-05   3.08557283e-05 ...,   1.74597408e-05
+    2.41471818e-04   1.25285331e-03]
+ [  1.25552047e-04   1.49583809e-06   9.14899647e-05 ...,   1.20422911e-07
+    5.55009392e-05   4.33791570e-07]
+ ..., 
+ [  5.90776443e-04   8.78241281e-06   1.11764475e-05 ...,   8.77697603e-04
+    4.03581143e-05   5.49547491e-04]
+ [  1.18919071e-02   2.13513249e-05   7.35482081e-06 ...,   3.11833457e-03
+    3.96910647e-04   2.69109529e-04]
+ [  5.79976950e-05   5.87502363e-05   4.41315424e-05 ...,   2.82243127e-03
+    1.58442674e-06   2.09656563e-02]]
+INFO:tensorflow:global_step/sec: 8.0101
+INFO:tensorflow:loss = 3.31904, step = 701
+INFO:tensorflow:global_step/sec: 8.00064
+INFO:tensorflow:loss = 2.45894, step = 801
+INFO:tensorflow:probabilities = [[  4.63319058e-03   2.69633550e-02   2.67165201e-03 ...,   3.87959375e-07
+    2.34563072e-06   2.11908249e-04]
+ [  4.15717732e-05   1.25520742e-07   7.67624101e-07 ...,   3.14698875e-04
+    5.07790855e-06   1.86067510e-07]
+ [  1.63715285e-05   5.76728082e-04   5.04439231e-04 ...,   1.75445234e-06
+    6.54381292e-05   7.34590230e-06]
+ ..., 
+ [  1.57367758e-04   8.53257443e-05   3.73479379e-05 ...,   4.56890957e-05
+    1.03721753e-09   1.57408283e-06]
+ [  8.55809660e-04   9.26258945e-05   1.21284111e-05 ...,   1.17348884e-06
+    4.27513851e-06   3.93229493e-06]
+ [  1.53091722e-04   1.58551138e-05   4.47565117e-06 ...,   6.37982248e-06
+    8.61025183e-06   1.74197794e-05]]
+INFO:tensorflow:global_step/sec: 7.98022
+INFO:tensorflow:loss = 2.22919, step = 901
+INFO:tensorflow:global_step/sec: 7.64644
+INFO:tensorflow:loss = 1.86522, step = 1001
+INFO:tensorflow:probabilities = [[  1.33882904e-05   1.40260374e-06   2.64523436e-07 ...,   5.80062476e-07
+    6.24422537e-05   4.68750954e-07]
+ [  1.06795121e-10   1.17673501e-11   3.67881046e-13 ...,   1.35787070e-09
+    8.50893037e-11   6.62896804e-09]
+ [  4.03772901e-06   6.23426866e-11   1.12795911e-10 ...,   3.43202373e-05
+    1.85394856e-05   1.60298654e-08]
+ ..., 
+ [  6.03238774e-08   4.29486306e-07   2.79785581e-06 ...,   2.37491780e-11
+    1.70070746e-09   1.14096232e-10]
+ [  2.36142134e-10   1.56536298e-10   1.17917143e-09 ...,   2.09411785e-12
+    1.14356496e-07   3.81835570e-11]
+ [  1.13319004e-07   1.59044459e-04   8.64716565e-09 ...,   5.18755483e-09
+    4.74086264e-03   1.28153932e-08]]
+INFO:tensorflow:global_step/sec: 7.97246
+INFO:tensorflow:loss = 1.50483, step = 1101
+INFO:tensorflow:global_step/sec: 7.99603
+INFO:tensorflow:loss = 1.49246, step = 1201
+INFO:tensorflow:probabilities = [[  2.43873819e-05   8.93383913e-07   1.32980517e-07 ...,   9.46740997e-09
+    3.16450722e-04   1.25188819e-08]
+ [  7.15103261e-06   9.52705150e-08   2.16021885e-08 ...,   3.09428258e-04
+    4.75059592e-09   1.30204936e-09]
+ [  2.32029265e-07   7.44801830e-04   5.79571584e-03 ...,   2.30247488e-11
+    8.14280338e-06   3.12709258e-09]
+ ..., 
+ [  1.09852090e-05   1.41918113e-08   1.46121892e-10 ...,   4.21173972e-05
+    3.13706927e-08   8.21522690e-07]
+ [  2.69184966e-05   3.30563495e-03   1.87312886e-02 ...,   1.69019749e-08
+    1.33950110e-07   3.51735180e-05]
+ [  7.96555444e-09   1.10399561e-07   9.02207553e-09 ...,   1.44122808e-07
+    1.28570844e-06   6.30260928e-08]]
+INFO:tensorflow:global_step/sec: 7.98237
+INFO:tensorflow:loss = 1.53995, step = 1301
+INFO:tensorflow:global_step/sec: 7.99154
+INFO:tensorflow:loss = 1.37081, step = 1401
+INFO:tensorflow:probabilities = [[  2.09390066e-07   1.51753164e-04   2.87796254e-03 ...,   1.38341193e-06
+    5.62350579e-07   1.95166958e-08]
+ [  7.35101930e-05   1.31992226e-06   8.33296654e-05 ...,   2.38582907e-05
+    6.76630748e-07   9.31252871e-05]
+ [  6.51496293e-06   1.45377562e-04   3.37466827e-06 ...,   7.33804706e-09
+    4.96826554e-03   1.56315316e-09]
+ ..., 
+ [  1.85378582e-07   1.52538693e-11   1.63783861e-10 ...,   1.98382841e-05
+    1.46537182e-09   1.38225761e-04]
+ [  1.33591209e-06   5.82413193e-08   2.21517735e-06 ...,   4.40926699e-04
+    5.67814809e-08   1.68709377e-07]
+ [  3.39003163e-05   2.57141096e-07   6.15021136e-08 ...,   5.22318238e-04
+    5.70752023e-09   8.45261425e-08]]
+INFO:tensorflow:global_step/sec: 7.9747
+INFO:tensorflow:loss = 0.93725, step = 1501
+INFO:tensorflow:global_step/sec: 7.99205
+INFO:tensorflow:loss = 1.19197, step = 1601
+INFO:tensorflow:probabilities = [[  3.12905520e-01   2.63413040e-06   4.17941010e-07 ...,   1.21850979e-04
+    8.00255293e-07   2.57506350e-09]
+ [  8.88838088e-08   1.27915132e-06   1.48389105e-08 ...,   3.06491950e-11
+    4.71071507e-05   9.97198227e-11]
+ [  9.04042508e-10   8.24275190e-08   9.15919873e-09 ...,   1.07094792e-07
+    7.61891661e-10   4.78392940e-06]
+ ..., 
+ [  1.72155225e-07   2.07353956e-08   7.40500272e-10 ...,   4.93135588e-10
+    2.84979222e-07   8.33567526e-07]
+ [  3.94097910e-09   5.71127521e-06   1.70939029e-06 ...,   2.43953551e-08
+    2.29182242e-05   2.99998683e-05]
+ [  1.68751970e-12   8.76300516e-17   2.87053340e-13 ...,   6.94681468e-09
+    4.17670716e-12   9.34987712e-11]]
+INFO:tensorflow:global_step/sec: 7.98334
+INFO:tensorflow:loss = 1.14077, step = 1701
+INFO:tensorflow:global_step/sec: 8.00028
+INFO:tensorflow:loss = 0.900692, step = 1801
+INFO:tensorflow:probabilities = [[  1.47856098e-12   2.42766984e-09   3.79267147e-12 ...,   1.79749989e-07
+    4.78733897e-09   1.28547313e-07]
+ [  2.82979240e-08   1.28019872e-06   2.40896081e-10 ...,   4.64327155e-09
+    5.78284585e-07   4.44009007e-09]
+ [  5.27803536e-07   3.04710146e-09   3.13282768e-11 ...,   1.45021670e-06
+    2.12470153e-09   1.06328324e-08]
+ ..., 
+ [  7.47537797e-07   9.36986382e-08   9.34229334e-08 ...,   2.02856100e-11
+    9.68140739e-07   5.62965567e-07]
+ [  2.60368433e-05   3.89446875e-09   1.30964850e-10 ...,   4.27754934e-08
+    4.74221124e-05   9.55415080e-10]
+ [  4.48948398e-08   6.62853550e-09   7.73894726e-10 ...,   7.21075533e-10
+    7.65682517e-11   1.65221813e-13]]
+INFO:tensorflow:global_step/sec: 8.00497
+INFO:tensorflow:loss = 0.65447, step = 1901
+INFO:tensorflow:global_step/sec: 8.00316
+INFO:tensorflow:loss = 0.651302, step = 2001
+INFO:tensorflow:probabilities = [[  5.72272398e-08   3.73645115e-10   2.56302826e-07 ...,   3.80475897e-13
+    1.43365883e-13   2.34609732e-09]
+ [  1.14138332e-09   6.19428460e-15   8.65727235e-14 ...,   1.13376138e-12
+    1.82849856e-13   4.69346784e-13]
+ [  1.00886588e-09   3.53590309e-07   3.66690386e-07 ...,   1.16291579e-12
+    3.03398195e-10   3.14667151e-12]
+ ..., 
+ [  3.90697596e-06   7.69102917e-06   1.01316495e-04 ...,   1.06163782e-06
+    4.97380155e-04   2.16735170e-05]
+ [  1.21733399e-04   3.21317371e-03   1.36574454e-05 ...,   1.94135112e-07
+    6.14438432e-06   1.18719674e-06]
+ [  3.19518767e-09   2.54551180e-09   8.94080421e-10 ...,   7.65617791e-09
+    9.62069464e-08   1.12608567e-09]]
+INFO:tensorflow:global_step/sec: 8.00173
+INFO:tensorflow:loss = 0.566373, step = 2101
+INFO:tensorflow:global_step/sec: 7.99303
+INFO:tensorflow:loss = 0.687604, step = 2201
+INFO:tensorflow:probabilities = [[  3.47392604e-09   7.45232587e-09   4.83241784e-08 ...,   7.88216172e-13
+    1.68734147e-08   1.43423406e-08]
+ [  2.63950369e-07   3.09135599e-11   1.65254987e-09 ...,   4.13084317e-10
+    1.68184267e-09   1.05133520e-08]
+ [  2.11547562e-08   1.96142651e-07   2.27976735e-10 ...,   3.00394644e-15
+    2.21043160e-06   3.59545935e-11]
+ ..., 
+ [  1.39883174e-10   2.76684101e-12   1.02041422e-12 ...,   1.28396408e-07
+    1.94390259e-09   4.45408972e-15]
+ [  5.13871150e-12   4.20089690e-13   6.61723145e-15 ...,   1.20279382e-18
+    2.63191737e-07   4.31976944e-14]
+ [  3.45351516e-08   1.03196713e-08   1.39516256e-08 ...,   1.96316856e-12
+    4.49904197e-10   9.04586273e-09]]
+INFO:tensorflow:global_step/sec: 7.99682
+INFO:tensorflow:loss = 0.72142, step = 2301
+INFO:tensorflow:global_step/sec: 7.98748
+INFO:tensorflow:loss = 0.831332, step = 2401
+INFO:tensorflow:probabilities = [[  1.88020135e-06   4.84411139e-05   3.16757496e-06 ...,   7.82413338e-07
+    6.89456239e-04   3.01003524e-07]
+ [  8.26914766e-06   4.46194609e-10   4.74166983e-10 ...,   1.10245093e-08
+    1.09112710e-08   3.27830350e-08]
+ [  5.35936124e-07   1.58963098e-06   4.99393991e-07 ...,   3.70678960e-10
+    1.03634420e-05   2.56460859e-04]
+ ..., 
+ [  1.08040126e-07   1.83827142e-09   7.66454566e-10 ...,   4.68924677e-18
+    1.05704938e-08   9.58040765e-12]
+ [  2.82837060e-08   1.04252813e-11   2.75933833e-12 ...,   5.87064989e-12
+    2.20050222e-09   3.69672740e-17]
+ [  7.71808928e-09   8.74988103e-12   5.36049916e-09 ...,   8.73875245e-13
+    1.15451404e-13   1.20336232e-11]]
+INFO:tensorflow:global_step/sec: 7.99984
+INFO:tensorflow:loss = 0.468824, step = 2501
+INFO:tensorflow:global_step/sec: 7.98794
+INFO:tensorflow:loss = 0.676588, step = 2601
+INFO:tensorflow:probabilities = [[  7.62626961e-15   6.70208086e-15   3.04168539e-18 ...,   4.36618022e-18
+    2.74860131e-13   3.44848633e-16]
+ [  5.74166712e-12   5.23884712e-12   1.16886735e-11 ...,   6.23074703e-09
+    9.43736964e-11   1.03702480e-09]
+ [  2.12076090e-09   1.27129873e-09   1.72666521e-08 ...,   1.09668115e-16
+    1.01994795e-13   1.57265618e-12]
+ ..., 
+ [  9.93255981e-06   2.98441161e-10   1.80939935e-07 ...,   4.16120372e-13
+    2.35258705e-11   2.03281753e-10]
+ [  1.28869682e-09   5.02074673e-13   7.72267731e-16 ...,   5.04092213e-07
+    1.28477201e-10   4.43203807e-12]
+ [  9.35040953e-06   3.87196820e-07   3.23549587e-09 ...,   3.49301787e-09
+    6.88210719e-07   1.06152811e-06]]
+INFO:tensorflow:global_step/sec: 8.00336
+INFO:tensorflow:loss = 0.563533, step = 2701
+INFO:tensorflow:global_step/sec: 8.00086
+INFO:tensorflow:loss = 0.452602, step = 2801
+INFO:tensorflow:probabilities = [[  9.52492396e-09   6.46108644e-12   3.03329006e-09 ...,   9.64739044e-09
+    1.17418408e-10   2.41225345e-10]
+ [  2.03660127e-11   1.69596954e-12   1.37658843e-11 ...,   1.88825307e-15
+    6.92242229e-16   1.93345513e-12]
+ [  1.75748184e-07   2.00967762e-07   1.71656197e-07 ...,   3.76122522e-10
+    1.32805303e-06   3.12388759e-09]
+ ..., 
+ [  8.35308299e-07   4.14092455e-07   1.56091488e-07 ...,   5.92981587e-06
+    1.13406912e-07   3.53816322e-05]
+ [  8.05341871e-04   1.38762596e-04   8.94151253e-06 ...,   1.58834196e-10
+    3.56982355e-07   8.47363690e-09]
+ [  1.36573852e-09   5.92753668e-06   2.72910383e-09 ...,   1.52035923e-07
+    5.27160093e-10   4.74859929e-10]]
+INFO:tensorflow:global_step/sec: 7.99717
+INFO:tensorflow:loss = 0.400732, step = 2901
+INFO:tensorflow:global_step/sec: 7.99418
+INFO:tensorflow:loss = 0.446665, step = 3001
+INFO:tensorflow:probabilities = [[  8.75242705e-08   1.59482122e-04   1.84255136e-08 ...,   1.05325351e-12
+    7.24497804e-05   1.44977521e-05]
+ [  5.65508838e-12   1.62566993e-09   2.53974229e-12 ...,   1.97736043e-07
+    1.37384077e-08   4.18817758e-10]
+ [  5.36457314e-08   1.45231396e-10   2.94961343e-12 ...,   1.52120947e-08
+    8.75662387e-09   1.29448807e-08]
+ ..., 
+ [  1.60753710e-09   1.57437341e-10   2.15162208e-06 ...,   6.15613232e-08
+    5.51571899e-09   1.61812238e-07]
+ [  1.98932737e-09   6.39868131e-06   5.24728385e-08 ...,   6.78175365e-06
+    3.86125842e-09   3.11673170e-12]
+ [  5.97580936e-08   3.33698612e-04   5.51953612e-08 ...,   6.40276948e-13
+    2.12173612e-09   5.11083675e-11]]
+INFO:tensorflow:global_step/sec: 7.99002
+INFO:tensorflow:loss = 0.404295, step = 3101
+INFO:tensorflow:global_step/sec: 7.998
+INFO:tensorflow:loss = 0.37968, step = 3201
+INFO:tensorflow:probabilities = [[  1.04969784e-08   2.20950970e-12   3.48696710e-10 ...,   2.38713996e-13
+    4.10671636e-10   2.07564144e-09]
+ [  4.05560492e-18   3.73436582e-15   5.41232613e-16 ...,   1.05010289e-11
+    1.21141475e-14   9.13882376e-17]
+ [  9.64941252e-11   5.32651831e-13   4.25331168e-12 ...,   3.43987261e-09
+    1.74946710e-10   5.30895194e-09]
+ ..., 
+ [  1.02814502e-11   1.35024006e-14   1.07986695e-15 ...,   1.27234921e-06
+    9.63601920e-13   1.21699760e-11]
+ [  2.98944016e-08   1.43014878e-10   4.91361607e-05 ...,   1.45725463e-14
+    1.32263922e-09   4.83674034e-09]
+ [  1.67337912e-05   1.17205213e-11   3.81290187e-14 ...,   2.17750595e-09
+    2.24580077e-07   3.96650825e-14]]
+INFO:tensorflow:global_step/sec: 7.99925
+INFO:tensorflow:loss = 0.425846, step = 3301
+INFO:tensorflow:global_step/sec: 8.00452
+INFO:tensorflow:loss = 0.376858, step = 3401
+INFO:tensorflow:probabilities = [[  2.53986343e-07   3.02021741e-11   8.41217897e-14 ...,   1.74435848e-14
+    9.00938039e-15   2.14950307e-16]
+ [  1.98661979e-07   9.50702628e-09   2.05154047e-10 ...,   2.77492090e-05
+    1.48208581e-11   7.71449959e-10]
+ [  5.61890147e-06   1.02587665e-05   1.32307900e-06 ...,   4.02219147e-09
+    2.77822153e-07   3.67279472e-06]
+ ..., 
+ [  5.83655013e-10   3.16686816e-10   3.68657723e-16 ...,   9.95383758e-08
+    2.23220781e-07   6.46739151e-09]
+ [  8.64904877e-08   2.00658019e-06   3.96300607e-07 ...,   1.54637110e-06
+    3.25856314e-10   1.57814696e-07]
+ [  2.09358382e-06   5.67741965e-10   5.88947158e-09 ...,   5.52192095e-14
+    6.34809002e-12   1.20394961e-09]]
+INFO:tensorflow:global_step/sec: 7.99806
+INFO:tensorflow:loss = 0.26949, step = 3501
+INFO:tensorflow:global_step/sec: 7.99341
+INFO:tensorflow:loss = 0.284857, step = 3601
+INFO:tensorflow:probabilities = [[  2.56886831e-14   1.05345051e-12   1.58923882e-16 ...,   4.93886911e-11
+    1.15190314e-11   2.33666151e-15]
+ [  8.38969960e-09   3.91055055e-09   1.85575846e-06 ...,   2.90640048e-04
+    3.93186610e-07   2.60020911e-08]
+ [  5.75278594e-13   2.22615607e-10   9.70903479e-13 ...,   1.06640914e-14
+    3.38787483e-12   2.73616138e-14]
+ ..., 
+ [  8.63214847e-11   3.40616083e-07   2.38917131e-09 ...,   5.81159935e-15
+    2.68813149e-11   1.90514488e-12]
+ [  2.75695365e-05   2.48117194e-05   1.41564044e-04 ...,   4.29707598e-07
+    7.81913463e-04   5.25820440e-07]
+ [  3.04214778e-11   2.58037769e-09   7.12465850e-11 ...,   1.77296888e-09
+    1.45200815e-07   1.52383412e-12]]
+INFO:tensorflow:global_step/sec: 8.00096
+INFO:tensorflow:loss = 0.326045, step = 3701
+INFO:tensorflow:global_step/sec: 8.00303
+INFO:tensorflow:loss = 0.453624, step = 3801
+INFO:tensorflow:probabilities = [[  2.42011797e-15   2.12130952e-15   8.43862728e-17 ...,   8.84444871e-17
+    1.31771549e-09   1.03959001e-15]
+ [  1.39898820e-16   1.25465608e-18   1.31732824e-18 ...,   4.45913381e-18
+    8.87228578e-16   1.48315386e-17]
+ [  6.32415648e-12   1.67116900e-06   1.83130089e-06 ...,   4.17402529e-10
+    1.63698807e-12   2.74582076e-11]
+ ..., 
+ [  2.62530366e-15   5.51812372e-12   3.51113583e-11 ...,   7.15284078e-20
+    5.42800288e-13   1.18599749e-14]
+ [  5.81979213e-12   5.46926705e-11   2.32978106e-14 ...,   3.24980231e-16
+    1.60488522e-09   1.32476486e-11]
+ [  8.48660697e-09   2.88956037e-09   2.64239075e-09 ...,   9.87805504e-10
+    3.99129902e-07   1.77640069e-09]]
+INFO:tensorflow:global_step/sec: 8.00603
+INFO:tensorflow:loss = 0.557552, step = 3901
+INFO:tensorflow:global_step/sec: 8.00194
+INFO:tensorflow:loss = 0.144805, step = 4001
+INFO:tensorflow:probabilities = [[  1.86634941e-13   3.09499454e-10   4.94737138e-14 ...,   8.99132144e-16
+    5.12651361e-08   8.35756398e-15]
+ [  3.28237382e-10   4.67212696e-04   1.69426755e-07 ...,   9.60814248e-16
+    2.48104575e-11   1.30527750e-13]
+ [  3.48760014e-11   3.83377809e-11   2.23228079e-15 ...,   1.52403035e-10
+    7.42994688e-09   9.29113123e-12]
+ ..., 
+ [  9.93235078e-11   1.98743294e-07   2.02605424e-12 ...,   8.87706922e-11
+    1.51695231e-05   3.71547699e-08]
+ [  3.87284843e-14   2.59986355e-11   1.05101136e-14 ...,   5.09342080e-08
+    6.16353279e-12   2.13036366e-09]
+ [  1.03764389e-04   9.85282602e-12   3.95670401e-14 ...,   3.20265614e-09
+    5.74700110e-09   3.95914301e-10]]
+INFO:tensorflow:global_step/sec: 7.99854
+INFO:tensorflow:loss = 0.250691, step = 4101
+INFO:tensorflow:global_step/sec: 7.99373
+INFO:tensorflow:loss = 0.135958, step = 4201
+INFO:tensorflow:probabilities = [[  1.31339357e-17   2.83687102e-11   1.60076022e-10 ...,   1.48252044e-22
+    1.53101334e-19   1.87834842e-13]
+ [  9.11598761e-08   1.45113177e-07   1.07002698e-07 ...,   2.25048461e-05
+    4.92873049e-08   4.01270794e-10]
+ [  2.56728439e-04   3.75928053e-08   1.54890589e-08 ...,   2.50912469e-09
+    2.71351253e-09   5.34033451e-12]
+ ..., 
+ [  3.55913882e-10   9.84367290e-08   2.11670993e-11 ...,   6.44491445e-14
+    2.40112286e-06   5.47753842e-10]
+ [  9.16824006e-10   2.08430690e-12   2.00000363e-10 ...,   6.07449746e-14
+    3.23724303e-14   3.05368819e-09]
+ [  1.91724817e-10   1.68834773e-11   7.16648657e-15 ...,   6.67884748e-10
+    6.78619188e-08   9.59891541e-11]]
+INFO:tensorflow:global_step/sec: 8.00125
+INFO:tensorflow:loss = 0.25437, step = 4301
+INFO:tensorflow:global_step/sec: 7.99677
+INFO:tensorflow:loss = 0.151115, step = 4401
+INFO:tensorflow:probabilities = [[  3.45301183e-11   5.05898622e-12   5.55766475e-11 ...,   2.89669333e-16
+    3.22127226e-13   1.90429739e-09]
+ [  2.49224198e-14   7.49842948e-18   5.36566488e-15 ...,   4.22772234e-10
+    1.81519418e-11   7.48225741e-14]
+ [  1.04491360e-09   9.19545116e-08   9.94837940e-01 ...,   2.20498901e-12
+    1.01841688e-10   6.28910812e-10]
+ ..., 
+ [  1.18331955e-09   6.98452884e-12   3.43144645e-11 ...,   4.20421781e-10
+    2.18815856e-07   5.37934682e-07]
+ [  1.01072837e-13   9.41544968e-15   1.09705828e-16 ...,   6.38294753e-16
+    2.40804745e-13   6.59524671e-15]
+ [  8.50115377e-12   1.02730875e-14   9.61912717e-17 ...,   2.63834988e-13
+    2.69133764e-08   1.55073593e-10]]
+INFO:tensorflow:global_step/sec: 7.98942
+INFO:tensorflow:loss = 0.276922, step = 4501
+INFO:tensorflow:global_step/sec: 8.00745
+INFO:tensorflow:loss = 0.179268, step = 4601
+INFO:tensorflow:probabilities = [[  2.48069442e-13   5.96977459e-12   8.16032829e-14 ...,   6.25773211e-10
+    2.40099299e-14   1.88454468e-16]
+ [  8.74536554e-13   1.44445355e-13   1.50924967e-11 ...,   1.09753345e-13
+    7.64141463e-13   1.08444642e-10]
+ [  1.12644238e-09   1.41236409e-08   1.26239611e-12 ...,   3.06883821e-18
+    2.12653073e-09   2.40788726e-13]
+ ..., 
+ [  3.62750580e-10   1.14338674e-14   3.50914718e-13 ...,   1.50523125e-14
+    4.16061581e-13   5.19628340e-13]
+ [  4.28491194e-06   1.18540611e-09   2.61173028e-07 ...,   6.78527720e-11
+    3.40692266e-11   3.26367449e-08]
+ [  5.67312364e-10   4.19947277e-09   2.37196596e-10 ...,   3.53933527e-12
+    1.01768906e-04   1.10824110e-11]]
+INFO:tensorflow:global_step/sec: 8.00176
+INFO:tensorflow:loss = 0.128854, step = 4701
+INFO:tensorflow:Saving checkpoints for 4761 into /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/logs/japcnn_Kanji_god_M8/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.02148
+INFO:tensorflow:loss = 0.0797383, step = 4801
+INFO:tensorflow:probabilities = [[  9.69062963e-09   1.10804010e-07   4.77909316e-06 ...,   1.03765425e-11
+    3.38927644e-13   3.44340008e-12]
+ [  1.65654851e-11   3.13710307e-14   2.41950421e-14 ...,   2.18832932e-19
+    6.92034795e-14   2.20608019e-20]
+ [  2.45367260e-09   2.65186506e-12   7.81573917e-10 ...,   8.78189699e-09
+    1.30481086e-11   2.16882432e-11]
+ ..., 
+ [  4.06700125e-11   6.49977849e-08   4.35816716e-10 ...,   1.31600527e-14
+    1.85086741e-13   4.19084831e-14]
+ [  1.50344874e-17   1.67760128e-18   6.14490424e-21 ...,   1.82962961e-21
+    3.60564113e-11   1.90249473e-18]
+ [  1.56252416e-17   6.23696786e-13   1.99488287e-15 ...,   4.52388862e-15
+    6.12189754e-18   4.09815418e-23]]
+INFO:tensorflow:global_step/sec: 7.99597
+INFO:tensorflow:loss = 0.21252, step = 4901
+INFO:tensorflow:global_step/sec: 8.01018
+INFO:tensorflow:loss = 0.125743, step = 5001
+INFO:tensorflow:probabilities = [[  3.59850979e-15   1.51804333e-10   4.49109326e-12 ...,   2.83524892e-19
+    1.00208503e-12   1.90368351e-13]
+ [  5.66050353e-13   5.05507580e-11   2.70863349e-14 ...,   1.27736528e-15
+    5.14415206e-07   3.67310747e-07]
+ [  1.61919367e-10   2.02059766e-12   5.64575808e-09 ...,   9.25582455e-09
+    5.95149928e-12   6.04201715e-12]
+ ..., 
+ [  1.12299042e-11   9.80713910e-16   3.87283006e-09 ...,   2.41343192e-15
+    1.91309127e-13   2.47515253e-17]
+ [  1.00513076e-09   1.84274742e-13   1.83242364e-15 ...,   2.27940982e-11
+    6.79078782e-14   5.97024004e-13]
+ [  1.73698664e-16   7.09902284e-18   8.44152032e-20 ...,   2.14945347e-17
+    1.89182302e-14   5.16316849e-21]]
+INFO:tensorflow:global_step/sec: 8.00908
+INFO:tensorflow:loss = 0.24816, step = 5101
+INFO:tensorflow:global_step/sec: 8.01191
+INFO:tensorflow:loss = 0.134335, step = 5201
+INFO:tensorflow:probabilities = [[  1.77528325e-16   9.26180871e-16   1.08571765e-17 ...,   1.63499997e-12
+    2.24817864e-12   6.22222140e-21]
+ [  4.29717351e-13   5.55068741e-13   2.35225522e-13 ...,   3.02302792e-18
+    3.95948899e-13   1.76235675e-12]
+ [  3.12102969e-15   3.57408534e-14   1.27555632e-14 ...,   8.38497511e-13
+    2.67526390e-10   6.31617958e-09]
+ ..., 
+ [  2.14286184e-12   5.87309281e-13   8.63233882e-16 ...,   3.55347871e-16
+    1.93204664e-06   2.45850551e-15]
+ [  7.38570699e-03   1.70824860e-05   1.85406336e-07 ...,   2.17972479e-06
+    2.00589193e-06   3.82831931e-05]
+ [  3.31861173e-14   3.83966573e-16   3.27175149e-14 ...,   5.18843579e-11
+    5.84759324e-12   2.49754864e-14]]
+INFO:tensorflow:global_step/sec: 7.99656
+INFO:tensorflow:loss = 0.150147, step = 5301
+INFO:tensorflow:global_step/sec: 7.99585
+INFO:tensorflow:loss = 0.18201, step = 5401
+INFO:tensorflow:probabilities = [[  7.21265018e-12   3.40478276e-14   5.37839584e-17 ...,   3.16519810e-10
+    3.87912138e-08   7.22888437e-13]
+ [  9.41621295e-11   2.82647737e-15   2.48847348e-16 ...,   2.94345546e-06
+    7.57618707e-12   2.22136752e-20]
+ [  2.97290973e-13   1.28874464e-13   1.39996806e-13 ...,   2.22414087e-09
+    1.52620104e-13   1.25224353e-12]
+ ..., 
+ [  9.76275860e-09   7.26841764e-13   8.65785595e-17 ...,   2.21119320e-13
+    1.31937630e-14   3.71278435e-20]
+ [  2.16643908e-11   3.20400845e-10   8.03435653e-15 ...,   1.02533322e-17
+    8.43428509e-08   4.30175508e-14]
+ [  6.67611623e-16   1.90173953e-15   1.24745242e-16 ...,   7.38210654e-13
+    1.19703428e-13   2.55655024e-17]]
+INFO:tensorflow:global_step/sec: 7.98794
+INFO:tensorflow:loss = 0.250682, step = 5501
+INFO:tensorflow:global_step/sec: 7.99835
+INFO:tensorflow:loss = 0.324529, step = 5601
+INFO:tensorflow:probabilities = [[  3.29549804e-10   2.65233890e-10   3.18390931e-08 ...,   1.29723593e-10
+    1.80237471e-13   1.12547437e-11]
+ [  4.11910293e-07   7.13391846e-10   1.32891978e-06 ...,   9.96532579e-11
+    2.32528925e-15   4.08291768e-11]
+ [  1.22874404e-08   2.16994742e-08   8.11057745e-08 ...,   1.02381218e-13
+    3.09352965e-09   3.70002784e-09]
+ ..., 
+ [  7.95420208e-13   1.41746381e-14   1.91480675e-13 ...,   1.37666404e-23
+    3.52608657e-22   5.18327460e-18]
+ [  5.57588135e-14   1.62753533e-09   2.19501128e-08 ...,   1.76220192e-22
+    7.62257920e-21   2.56110470e-15]
+ [  2.01134109e-09   3.41825873e-11   1.23388517e-12 ...,   2.01421949e-06
+    5.19275118e-12   3.85407721e-12]]
+INFO:tensorflow:global_step/sec: 7.99597
+INFO:tensorflow:loss = 0.0349736, step = 5701
+INFO:tensorflow:global_step/sec: 7.99745
+INFO:tensorflow:loss = 0.148499, step = 5801
+INFO:tensorflow:probabilities = [[  5.01725085e-11   3.73610920e-10   6.08506041e-12 ...,   1.25702755e-11
+    6.77469691e-10   2.26332708e-09]
+ [  5.90036429e-08   7.94668651e-08   3.23177609e-08 ...,   1.66257280e-07
+    3.03631077e-05   8.04612377e-09]
+ [  4.18298382e-12   1.17808635e-15   1.49843813e-15 ...,   3.08048183e-12
+    2.90933828e-14   2.85212976e-22]
+ ..., 
+ [  1.53392139e-05   3.75842968e-10   3.96597155e-09 ...,   1.06725524e-10
+    7.23962543e-08   1.12137798e-06]
+ [  1.57539482e-19   4.35050786e-16   4.81053554e-19 ...,   1.32312174e-21
+    9.71790228e-15   7.43592962e-21]
+ [  2.83650707e-13   1.18048165e-15   4.37653081e-14 ...,   1.11245242e-13
+    3.12828749e-16   7.58443227e-17]]
+INFO:tensorflow:global_step/sec: 8.007
+INFO:tensorflow:loss = 0.169803, step = 5901
+INFO:tensorflow:global_step/sec: 7.99474
+INFO:tensorflow:loss = 0.242243, step = 6001
+INFO:tensorflow:probabilities = [[  8.33210150e-12   8.13520984e-08   4.15768614e-10 ...,   5.41773961e-12
+    6.45739628e-10   1.71726418e-11]
+ [  1.32846694e-07   1.92622428e-11   1.28898073e-10 ...,   9.93854304e-13
+    4.24486054e-12   2.09161188e-10]
+ [  5.84030914e-12   1.20370879e-12   4.45506296e-16 ...,   5.62552167e-16
+    7.54377030e-14   7.60063442e-17]
+ ..., 
+ [  8.22922674e-10   2.03170503e-09   1.65825617e-11 ...,   1.07006737e-10
+    3.64442365e-11   8.94483706e-12]
+ [  8.56070043e-14   8.84796414e-09   2.29115771e-14 ...,   1.26383189e-20
+    1.22338972e-10   6.32317747e-19]
+ [  9.79566797e-13   5.30913052e-16   1.60259577e-12 ...,   6.49564332e-13
+    2.09938116e-19   9.91803782e-17]]
+INFO:tensorflow:global_step/sec: 8.00132
+INFO:tensorflow:loss = 0.156565, step = 6101
+INFO:tensorflow:global_step/sec: 8.00324
+INFO:tensorflow:loss = 0.120049, step = 6201
+INFO:tensorflow:probabilities = [[  2.92276836e-13   4.32504374e-14   9.39785291e-20 ...,   2.34118881e-17
+    2.76392763e-11   8.10607420e-17]
+ [  1.15839946e-14   1.50568185e-15   8.75510036e-16 ...,   2.22194530e-15
+    6.87818469e-09   1.35768458e-13]
+ [  8.09091546e-15   5.00200012e-12   2.03806178e-12 ...,   1.13900234e-20
+    3.74640884e-13   1.53109642e-17]
+ ..., 
+ [  6.19690931e-13   1.57324969e-14   2.54930405e-15 ...,   2.28917091e-13
+    3.71478401e-13   2.12698956e-12]
+ [  1.53698987e-09   6.61786892e-09   2.04153725e-11 ...,   1.44076506e-09
+    1.11901324e-08   9.47438569e-12]
+ [  3.80922904e-10   2.90256482e-11   3.80883563e-07 ...,   1.30751922e-20
+    2.35339909e-15   1.77464001e-12]]
+INFO:tensorflow:global_step/sec: 8.00392
+INFO:tensorflow:loss = 0.185712, step = 6301
+INFO:tensorflow:global_step/sec: 7.99996
+INFO:tensorflow:loss = 0.0456635, step = 6401
+INFO:tensorflow:probabilities = [[  1.69352227e-14   1.09093956e-17   3.66390269e-19 ...,   1.16262078e-12
+    4.42066855e-10   7.54272450e-17]
+ [  1.71829619e-13   2.56999859e-14   6.99052903e-13 ...,   1.68856243e-16
+    2.97791604e-13   1.74080347e-10]
+ [  1.67066343e-11   2.94922917e-15   1.80768160e-16 ...,   5.06015179e-14
+    6.82507334e-07   3.95545955e-14]
+ ..., 
+ [  8.13152434e-10   1.73340214e-11   1.54546168e-11 ...,   1.07814348e-10
+    9.32864549e-12   8.71128225e-10]
+ [  6.84726391e-14   3.23691664e-11   3.13362379e-12 ...,   4.18393992e-18
+    2.02351677e-12   1.49411733e-13]
+ [  1.01363427e-12   3.10670577e-14   2.56484038e-16 ...,   7.17195346e-13
+    2.30447345e-12   5.56855045e-15]]
+INFO:tensorflow:global_step/sec: 8.00548
+INFO:tensorflow:loss = 0.184044, step = 6501
+INFO:tensorflow:global_step/sec: 7.99495
+INFO:tensorflow:loss = 0.164834, step = 6601
+INFO:tensorflow:probabilities = [[  1.29494383e-13   1.80857395e-11   2.19590649e-13 ...,   1.50321977e-08
+    3.27116201e-09   2.29786110e-05]
+ [  2.73226667e-12   6.86611366e-16   1.63529617e-12 ...,   1.49472813e-15
+    2.33226698e-12   4.23972245e-14]
+ [  4.33802561e-05   1.32662441e-08   7.34198764e-08 ...,   1.74543262e-11
+    2.87453279e-08   7.08102299e-10]
+ ..., 
+ [  2.27946678e-20   4.89044211e-25   5.10307513e-25 ...,   5.71901477e-24
+    6.60190063e-19   8.95199739e-20]
+ [  1.00017503e-11   1.24642690e-19   2.29285208e-20 ...,   3.12233581e-08
+    3.30360414e-12   1.18056398e-11]
+ [  1.13813070e-09   1.06962499e-14   1.46408019e-14 ...,   4.07069479e-07
+    6.68138331e-12   1.25679742e-14]]
+INFO:tensorflow:global_step/sec: 8.00741
+INFO:tensorflow:loss = 0.0497515, step = 6701
+INFO:tensorflow:global_step/sec: 7.99774
+INFO:tensorflow:loss = 0.210291, step = 6801
+INFO:tensorflow:probabilities = [[  8.34050141e-19   6.71426794e-19   5.71734961e-21 ...,   1.80602505e-19
+    4.48133544e-11   1.75978321e-22]
+ [  5.82161533e-12   1.84860998e-11   1.05790648e-12 ...,   2.73895184e-10
+    2.07620856e-12   8.22427708e-08]
+ [  1.20593277e-15   7.29654988e-22   6.25400722e-23 ...,   9.74566469e-11
+    5.32826841e-19   9.60785088e-18]
+ ..., 
+ [  5.41090117e-07   6.80404497e-08   2.20264565e-06 ...,   2.31179511e-05
+    1.64028224e-09   1.50147503e-08]
+ [  4.95543497e-15   3.25255014e-12   3.76791214e-15 ...,   6.23670256e-12
+    1.71717350e-12   1.28322286e-18]
+ [  3.05008623e-13   4.97989367e-12   5.69501175e-08 ...,   3.24859237e-19
+    6.40861952e-16   1.62460182e-12]]
+INFO:tensorflow:global_step/sec: 7.99904
+INFO:tensorflow:loss = 0.111705, step = 6901
+INFO:tensorflow:global_step/sec: 7.98634
+INFO:tensorflow:loss = 0.15021, step = 7001
+INFO:tensorflow:probabilities = [[  8.06881652e-19   5.76817608e-18   8.81739495e-24 ...,   4.12105652e-14
+    2.24142818e-12   7.74446120e-15]
+ [  8.90947816e-10   4.10397410e-10   3.19277826e-10 ...,   8.27307787e-08
+    5.11939220e-08   1.01769820e-05]
+ [  2.83142745e-18   8.37847153e-11   1.21909376e-16 ...,   7.65326502e-24
+    1.08219462e-14   7.89853684e-21]
+ ..., 
+ [  2.29115238e-09   8.60596003e-08   5.54154678e-09 ...,   1.25791727e-12
+    8.10212938e-11   3.75317351e-14]
+ [  1.52125388e-08   3.14893282e-06   7.16616512e-07 ...,   6.43156639e-11
+    8.91692609e-10   5.20192636e-08]
+ [  5.13874221e-10   2.01774396e-11   7.25657401e-08 ...,   1.57468331e-13
+    1.00329692e-11   1.05075101e-10]]
+INFO:tensorflow:global_step/sec: 7.99151
+INFO:tensorflow:loss = 0.0346735, step = 7101
+INFO:tensorflow:global_step/sec: 7.999
+INFO:tensorflow:loss = 0.0687171, step = 7201
+INFO:tensorflow:probabilities = [[  9.51129739e-15   6.26343383e-16   2.79937408e-17 ...,   4.77794938e-15
+    4.03179080e-17   2.94266327e-17]
+ [  2.09763051e-14   6.00169628e-17   7.05838511e-17 ...,   3.58825935e-19
+    1.54599853e-08   7.21114816e-17]
+ [  1.53634717e-16   3.42728131e-14   6.14612485e-15 ...,   8.25463287e-14
+    4.72768935e-09   2.97216700e-12]
+ ..., 
+ [  1.02530457e-07   1.73971094e-13   8.15532700e-13 ...,   2.20123500e-14
+    3.65563450e-19   1.39691946e-16]
+ [  1.62984405e-12   3.07208304e-15   1.87538428e-16 ...,   1.09267699e-14
+    7.62991178e-13   6.40093269e-17]
+ [  3.55714038e-21   1.17783142e-14   1.66001591e-19 ...,   6.85142700e-18
+    1.59010056e-12   1.11612547e-17]]
+INFO:tensorflow:global_step/sec: 7.99758
+INFO:tensorflow:loss = 0.154787, step = 7301
+INFO:tensorflow:global_step/sec: 8.01378
+INFO:tensorflow:loss = 0.0831509, step = 7401
+INFO:tensorflow:probabilities = [[  5.39795502e-17   2.67177369e-17   5.60165419e-15 ...,   3.97467432e-12
+    8.61380330e-14   1.59422350e-10]
+ [  2.22240934e-10   6.97904919e-15   3.88408483e-15 ...,   7.52337359e-11
+    2.25739105e-13   4.19400219e-13]
+ [  1.64097347e-11   2.65257499e-12   8.75857296e-19 ...,   2.27206378e-08
+    4.33204519e-16   1.35295291e-17]
+ ..., 
+ [  3.64513090e-15   7.50321436e-15   5.67788584e-06 ...,   6.50395677e-21
+    4.43921815e-16   7.53459957e-13]
+ [  7.54175584e-16   7.14064021e-15   1.37333581e-15 ...,   4.74190922e-04
+    1.73652858e-16   1.74513584e-15]
+ [  7.07644186e-12   2.91317805e-14   4.20509461e-10 ...,   1.81786766e-10
+    4.94844409e-11   3.38251425e-07]]
+INFO:tensorflow:global_step/sec: 8.01043
+INFO:tensorflow:loss = 0.0443719, step = 7501
+INFO:tensorflow:global_step/sec: 7.99414
+INFO:tensorflow:loss = 0.0121731, step = 7601
+INFO:tensorflow:probabilities = [[  8.26915086e-04   4.25860085e-12   1.71510764e-10 ...,   2.15228253e-13
+    1.06598263e-11   1.07212649e-07]
+ [  3.87261702e-14   6.57534405e-17   2.44571168e-17 ...,   1.26361405e-13
+    1.28844873e-12   3.11794183e-15]
+ [  4.21047406e-17   2.50426069e-11   3.97366432e-14 ...,   2.78152474e-14
+    8.40665093e-10   2.62216870e-13]
+ ..., 
+ [  5.08373988e-17   6.47973212e-13   1.23555625e-13 ...,   6.00998995e-20
+    4.83718720e-18   3.03981278e-16]
+ [  5.39435149e-17   4.88303046e-17   3.01450077e-20 ...,   1.06149174e-21
+    2.36273740e-18   1.18002412e-25]
+ [  7.90058970e-15   3.27059779e-09   1.97002059e-08 ...,   1.04759559e-16
+    1.13336933e-12   3.09660555e-16]]
+INFO:tensorflow:global_step/sec: 8.0018
+INFO:tensorflow:loss = 0.193519, step = 7701
+INFO:tensorflow:global_step/sec: 8.0074
+INFO:tensorflow:loss = 0.19918, step = 7801
+INFO:tensorflow:probabilities = [[  6.52204346e-10   3.90397739e-15   6.22040019e-17 ...,   1.23046362e-13
+    1.82248327e-13   5.77113010e-13]
+ [  2.93302878e-14   2.21514729e-19   1.29367342e-17 ...,   1.14088901e-15
+    3.15811432e-19   1.10560150e-12]
+ [  8.85850548e-18   1.92555484e-16   1.68667231e-14 ...,   5.51152857e-24
+    1.17296223e-16   2.06735183e-20]
+ ..., 
+ [  3.05452346e-14   2.73574892e-22   2.10078667e-18 ...,   1.02079763e-15
+    5.34254968e-19   1.51921323e-10]
+ [  2.09389594e-15   3.25124822e-14   1.19092430e-15 ...,   5.13097594e-14
+    6.41874385e-14   1.84326339e-11]
+ [  1.41676037e-12   2.72899695e-16   1.02273236e-15 ...,   1.46718256e-16
+    2.51803811e-20   3.77049694e-12]]
+INFO:tensorflow:global_step/sec: 8.00118
+INFO:tensorflow:loss = 0.0507644, step = 7901
+INFO:tensorflow:global_step/sec: 8.01013
+INFO:tensorflow:loss = 0.111297, step = 8001
+INFO:tensorflow:probabilities = [[  2.82196511e-20   1.02774197e-17   1.60688569e-17 ...,   9.25326261e-26
+    7.29664038e-11   2.76232183e-19]
+ [  1.55746371e-14   3.36410100e-09   1.95611905e-13 ...,   1.25887118e-18
+    4.29321110e-04   1.61111101e-13]
+ [  1.67016470e-10   2.31518693e-11   1.50972594e-14 ...,   1.29026190e-09
+    2.48858451e-11   1.01628554e-08]
+ ..., 
+ [  1.30999601e-18   1.17447926e-10   1.38106621e-14 ...,   6.44209489e-20
+    5.08264166e-13   7.13979291e-18]
+ [  2.73414526e-17   1.46928825e-14   8.13173856e-14 ...,   8.58860958e-19
+    1.56044108e-10   1.36945276e-20]
+ [  3.43359893e-20   1.77816512e-11   1.18011170e-18 ...,   3.24904993e-31
+    6.49196756e-17   1.15854836e-20]]
+INFO:tensorflow:global_step/sec: 8.00299
+INFO:tensorflow:loss = 0.0986535, step = 8101
+INFO:tensorflow:global_step/sec: 8.00357
+INFO:tensorflow:loss = 0.125674, step = 8201
+INFO:tensorflow:probabilities = [[  5.71092381e-13   6.86605013e-16   1.11643906e-17 ...,   1.99932300e-17
+    8.67836428e-11   1.92397029e-13]
+ [  1.57396630e-11   3.66591327e-17   1.38849165e-17 ...,   1.48354523e-11
+    3.23679372e-09   1.20881034e-19]
+ [  2.39365026e-21   1.74869422e-22   1.76577994e-23 ...,   3.00815281e-16
+    1.14508968e-16   6.37555804e-14]
+ ..., 
+ [  1.23213427e-11   2.59649897e-12   6.71697872e-18 ...,   1.02033834e-14
+    2.81043171e-08   4.83957374e-10]
+ [  4.93905970e-16   1.41087370e-12   1.30995996e-15 ...,   2.72550481e-25
+    1.40685009e-17   6.57061307e-21]
+ [  4.40196364e-19   2.71100494e-22   4.10340500e-29 ...,   1.85237534e-20
+    6.83042657e-16   2.90056620e-19]]
+INFO:tensorflow:global_step/sec: 8.00974
+INFO:tensorflow:loss = 0.0502802, step = 8301
+INFO:tensorflow:global_step/sec: 7.99913
+INFO:tensorflow:loss = 0.0396849, step = 8401
+INFO:tensorflow:probabilities = [[  1.14585675e-15   2.82377756e-17   3.68550904e-20 ...,   1.02610909e-23
+    1.95571640e-13   2.67704019e-17]
+ [  2.38706292e-07   4.06033905e-06   1.14469358e-08 ...,   7.37027366e-12
+    1.27479689e-06   2.92721722e-08]
+ [  9.98114839e-18   7.95594585e-15   9.13071015e-19 ...,   4.92254044e-15
+    5.79860812e-12   1.96269138e-19]
+ ..., 
+ [  2.19630520e-12   3.07792176e-13   1.37586839e-12 ...,   3.60218123e-22
+    1.96795813e-17   1.15808619e-17]
+ [  9.18827036e-15   3.84173721e-10   1.43762419e-17 ...,   3.26537754e-20
+    9.73393429e-21   4.42085723e-15]
+ [  1.46612001e-14   3.10501375e-10   1.40409846e-13 ...,   2.19318919e-09
+    1.00042463e-07   8.45031445e-06]]
+INFO:tensorflow:global_step/sec: 8.00554
+INFO:tensorflow:loss = 0.138518, step = 8501
+INFO:tensorflow:global_step/sec: 8.00304
+INFO:tensorflow:loss = 0.0555799, step = 8601
+INFO:tensorflow:probabilities = [[  6.32353192e-14   2.56248874e-17   3.94663225e-19 ...,   8.33753726e-20
+    4.98911859e-14   1.65797249e-18]
+ [  1.40466447e-12   1.55328182e-18   1.58681366e-19 ...,   1.49309215e-19
+    1.16338837e-13   9.23152918e-15]
+ [  3.89352010e-14   1.75368644e-13   8.63338755e-15 ...,   6.28683075e-21
+    3.09224073e-15   5.78757272e-20]
+ ..., 
+ [  4.90822796e-14   1.30000067e-21   2.50469865e-21 ...,   2.04729564e-21
+    7.20645895e-12   1.69250107e-23]
+ [  8.05961255e-13   5.73182298e-17   4.40793804e-13 ...,   1.20312813e-19
+    5.19620859e-13   8.05744881e-12]
+ [  1.41047979e-16   1.05697860e-13   5.59488386e-15 ...,   1.97500794e-25
+    2.39299393e-21   5.61870124e-18]]
+INFO:tensorflow:global_step/sec: 8.00552
+INFO:tensorflow:loss = 0.133738, step = 8701
+INFO:tensorflow:global_step/sec: 8.0077
+INFO:tensorflow:loss = 0.0593387, step = 8801
+INFO:tensorflow:probabilities = [[  9.32058684e-13   2.85849532e-16   1.81978544e-17 ...,   1.22341691e-04
+    1.09269911e-11   1.23130523e-13]
+ [  4.22771339e-15   1.17259997e-18   1.54650140e-14 ...,   2.92778293e-14
+    4.38354823e-16   1.22457405e-10]
+ [  1.00125800e-13   3.06937864e-10   1.25767235e-11 ...,   5.77795545e-20
+    1.23179700e-12   2.73520627e-13]
+ ..., 
+ [  2.61082003e-15   2.59279065e-19   2.04425958e-22 ...,   1.23112289e-19
+    1.45862913e-20   6.55530451e-19]
+ [  1.81993033e-15   1.28730533e-12   4.09917744e-09 ...,   1.70168399e-21
+    9.20339890e-20   6.44455621e-17]
+ [  2.91623908e-12   4.81101204e-15   3.93296947e-14 ...,   3.33241018e-10
+    1.27083308e-13   1.71101789e-07]]
+INFO:tensorflow:global_step/sec: 8.00616
+INFO:tensorflow:loss = 0.0238881, step = 8901
+INFO:tensorflow:global_step/sec: 8.00874
+INFO:tensorflow:loss = 0.0467755, step = 9001
+INFO:tensorflow:probabilities = [[  1.11083662e-14   2.08721993e-19   4.25662982e-15 ...,   6.77138218e-19
+    6.29402853e-17   4.30610954e-18]
+ [  6.05559008e-17   1.80737061e-14   2.46845835e-16 ...,   3.90500003e-16
+    4.43097715e-15   4.52487792e-13]
+ [  4.14597137e-16   2.16019876e-11   1.27230754e-16 ...,   3.10577824e-18
+    6.03970485e-10   8.14025468e-20]
+ ..., 
+ [  3.13136574e-08   6.07409698e-14   7.45809376e-15 ...,   8.84401927e-13
+    2.07566481e-11   1.35781118e-14]
+ [  7.49750002e-12   1.63320461e-13   1.49721855e-13 ...,   5.48795120e-14
+    2.19933904e-10   9.32337610e-11]
+ [  1.56486638e-21   1.78551409e-26   8.44931704e-32 ...,   1.00699657e-32
+    2.52409994e-22   2.44271434e-27]]
+INFO:tensorflow:global_step/sec: 8.00691
+INFO:tensorflow:loss = 0.0468707, step = 9101
+INFO:tensorflow:global_step/sec: 8.01166
+INFO:tensorflow:loss = 0.112855, step = 9201
+INFO:tensorflow:probabilities = [[  1.79324722e-13   6.77781312e-16   3.35048767e-10 ...,   6.78865375e-24
+    7.20665017e-20   8.52066546e-16]
+ [  1.03004707e-18   9.43432931e-21   1.88176128e-26 ...,   1.27221297e-21
+    1.88255740e-08   3.92584101e-15]
+ [  2.59173871e-16   4.41743776e-14   1.54277702e-15 ...,   7.46565268e-15
+    1.56095096e-15   3.31556504e-10]
+ ..., 
+ [  2.10543648e-12   4.82628150e-16   5.91775460e-15 ...,   1.79089643e-09
+    9.59013491e-09   5.07404340e-13]
+ [  4.80850515e-09   1.42148066e-13   1.10990112e-19 ...,   4.54930385e-16
+    9.02625305e-13   7.53704210e-17]
+ [  1.15394585e-14   1.40771158e-14   2.84030694e-17 ...,   1.52454145e-12
+    9.26910493e-11   2.61777279e-16]]
+INFO:tensorflow:global_step/sec: 8.00866
+INFO:tensorflow:loss = 0.0292421, step = 9301
+INFO:tensorflow:global_step/sec: 7.99024
+INFO:tensorflow:loss = 0.0735888, step = 9401
+INFO:tensorflow:probabilities = [[  7.39508450e-20   4.81711502e-16   1.08664059e-20 ...,   1.96572056e-12
+    2.25002308e-17   5.47673058e-18]
+ [  1.47276413e-09   2.44436491e-22   3.08677572e-21 ...,   8.66670463e-18
+    1.11460487e-21   4.79148878e-18]
+ [  5.59525274e-18   2.37578207e-21   1.09568145e-24 ...,   4.79583137e-19
+    3.32062481e-12   1.61886707e-17]
+ ..., 
+ [  4.29437155e-16   9.48185558e-11   4.33152109e-16 ...,   3.44912321e-09
+    2.86510010e-10   6.21892866e-07]
+ [  3.52444582e-13   1.74508758e-12   1.42532418e-11 ...,   7.75222669e-18
+    6.06064157e-11   8.70077786e-19]
+ [  1.55490724e-11   1.01395189e-14   3.40897165e-21 ...,   1.44096080e-16
+    2.63114156e-13   6.79889427e-14]]
+INFO:tensorflow:global_step/sec: 8.00797
+INFO:tensorflow:loss = 0.0157813, step = 9501
+INFO:tensorflow:Saving checkpoints for 9549 into /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/logs/japcnn_Kanji_god_M8/model.ckpt.
+INFO:tensorflow:global_step/sec: 7.0407
+INFO:tensorflow:loss = 0.0651921, step = 9601
+INFO:tensorflow:probabilities = [[  9.54616885e-19   4.82593514e-17   6.46039174e-20 ...,   5.84601174e-21
+    1.00759355e-15   1.63903258e-16]
+ [  1.80731593e-11   3.85343213e-16   8.50202333e-16 ...,   5.35905598e-10
+    6.57901511e-10   5.98067128e-14]
+ [  1.66567836e-13   5.66510607e-08   1.84354406e-06 ...,   8.31773888e-21
+    6.55421124e-16   2.66585243e-09]
+ ..., 
+ [  2.13549840e-13   1.71617760e-08   9.33085987e-12 ...,   1.86720350e-09
+    2.58924965e-11   7.67138523e-13]
+ [  2.99352323e-16   2.02729797e-15   1.50129598e-19 ...,   7.53472513e-19
+    1.53750929e-10   3.04505889e-19]
+ [  2.55928416e-08   8.21263347e-06   5.00430166e-12 ...,   3.54189110e-17
+    2.67308047e-17   9.78126516e-17]]
+INFO:tensorflow:global_step/sec: 8.01099
+INFO:tensorflow:loss = 0.034467, step = 9701
+INFO:tensorflow:global_step/sec: 8.01294
+INFO:tensorflow:loss = 0.0035217, step = 9801
+INFO:tensorflow:probabilities = [[  2.08377666e-19   1.31648201e-15   4.88950135e-13 ...,   1.33989775e-25
+    1.29299342e-18   1.86861609e-15]
+ [  6.31425467e-18   1.28791393e-17   3.36333705e-20 ...,   2.22305147e-16
+    1.91057185e-13   4.40434852e-13]
+ [  5.85084814e-10   5.29721191e-15   3.47970929e-17 ...,   3.59081146e-13
+    5.06709803e-05   9.19120414e-17]
+ ..., 
+ [  1.14781198e-08   1.15641275e-12   5.74273593e-13 ...,   6.49272261e-19
+    6.17687568e-11   1.23709046e-17]
+ [  1.04198927e-10   1.30822358e-11   9.97512739e-09 ...,   8.91276588e-17
+    7.62524152e-16   1.61126334e-09]
+ [  3.96848688e-20   1.06454154e-18   1.08856125e-17 ...,   6.75727235e-27
+    1.81970329e-25   1.19522840e-22]]
+INFO:tensorflow:global_step/sec: 8.00685
+INFO:tensorflow:loss = 0.0988942, step = 9901
+INFO:tensorflow:Saving checkpoints for 10000 into /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/logs/japcnn_Kanji_god_M8/model.ckpt.
+INFO:tensorflow:Loss for final step: 0.0760811.
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:332: calling BaseEstimator.evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with batch_size is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:332: calling BaseEstimator.evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with y is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+WARNING:tensorflow:From /afs/pdc.kth.se/home/r/rohin/DeepLearningProject/Code/tf_one_hotCNN.py:332: calling BaseEstimator.evaluate (from tensorflow.contrib.learn.python.learn.estimators.estimator) with x is deprecated and will be removed after 2016-12-01.
+Instructions for updating:
+Estimator is decoupled from Scikit Learn interface by moving into
+separate class SKCompat. Arguments x, y and batch_size are only
+available in the SKCompat class, Estimator will only accept input_fn.
+Example conversion:
+  est = Estimator(...) -> est = SKCompat(Estimator(...))
+INFO:tensorflow:Starting evaluation at 2017-05-20-17:34:47
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:85:00.0)
+INFO:tensorflow:Finished evaluation at 2017-05-20-17:35:03
+INFO:tensorflow:Saving dict for global step 10000: accuracy = 0.980473, global_step = 10000, loss = 0.0744626
+WARNING:tensorflow:Skipping summary for global_step, must be a float or np.float32.

@@ -1,0 +1,2 @@
+Imported KANJI
+{'accuracy': 0.00098282401, 'loss': 1.0076338e+17, 'global_step': 10000}

@@ -1,0 +1,7 @@
+dataset/*
+.DS_Store
+Code/.DS_Store
+Code/ETL1/ETL1*
+Code/dataset/
+Code/TestPics
+Code/MNIST-data/*
