@@ -1,1 +1,1 @@
-# DeepLearningProject# JapaneseCharacterRecognizerCNN
+# JapaneseCharacterRecognizerCNN
